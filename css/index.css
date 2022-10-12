@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: 42px !important;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    html {
+      font-size: 80px !important;
+    }
+  }
+@font-face {
+    font-family: electronicFont;
+    src: url(../font/DS-DIGIT.TTF);
+  }
+li{
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 700px;
+    background: url(../images/bg.jpg);
+    background-size:100% 100%;
+    line-height: 1.15;
+    font-size: 80px;
+}
+
+header {
+    height: 1.25rem;
+    background: url(../images/head_bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+h1 {
+    font-size: 0.475rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.showTime {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.25rem;
+    -webkit-transform: scale(0.5);
+}
+
+.minbox {
+    display: flex;
+    height: 700px;
+    padding: 0.125rem 0.125rem 0;
+}
+
+.minbox .column:nth-child(1) {
+    flex: 3;
+}
+
+.minbox .column:nth-child(2) {
+    flex: 5;
+    margin: 0 .125rem .1875rem;
+}
+
+.minbox .column:nth-child(3) {
+    flex: 3;
+}
+
+.panel {
+    position: relative;
+    height: 4.975rem;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: url(../images/line\(1\).png);
+    padding: 0 0.1875rem 0.5rem;
+    margin-bottom: 0.1875rem;
+}
+
+.panel::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 0.3rem;
+    height:  0.3rem;
+    border-top: 1px solid #02a6b5;
+    border-left: 1px solid #02a6b5;
+}
+
+.panel::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 0.3rem;
+    height:  0.3rem;
+    border-top: 1px solid #02a6b5;
+    border-right: 1px solid #02a6b5;
+}
+
+.panel-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.panel-footer::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0.3rem;
+    height:  0.3rem;
+    border-bottom: 1px solid #02a6b5;
+    border-left: 1px solid #02a6b5;
+}
+
+.panel-footer::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 0.3rem;
+    height:  0.3rem;
+    border-bottom: 1px solid #02a6b5;
+    border-right: 1px solid #02a6b5;
+}
+h2{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.25rem;
+    font-weight: 400;
+    -webkit-transform: scale(0.7);
+  }
+.chart {
+    width: 100%;
+    height: 90%;
+    font-size: 0.25rem;
+  }
+  .chart div canvas{
+    width: 100%;
+    height: 100%;
+  }
+  .no{
+    background: rgba(101,132,226,0.2);
+    padding: 0.1875rem;
+  }
+.no-hd{
+    border:1px solid rgba(25, 186, 139, 0.17);
+    position: relative;
+}
+.no-hd::before{
+    position: absolute;
+    top: 0;
+    left:  0;
+    content: "";
+    width: 0.7rem;
+    height: 0.4rem;
+    border-top: 1px solid #02a6b5;
+    border-left: 1px solid #02a6b5;
+}
+.no-hd::after{
+    position: absolute;
+    bottom:  0;
+    right:  0;
+    content: "";
+    width: 0.7rem;
+    height: 0.4rem;
+    border-bottom: 1px solid #02a6b5;
+    border-right: 1px solid #02a6b5;
+}
+.no-hd ul{
+    display: flex;
+}
+.no-hd ul li{
+    flex:1;
+    line-height:  1rem;
+    font-size: 0.875rem;
+    color: #ffeb7b;
+    text-align: center;
+    font-family: electronicFont;
+}
+.no-hd ul li:nth-child(1):after{
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    height: 50%;
+    width: 1px;
+    background:rgba(255, 255, 255, 0.2) ;
+}
+
+   
+.no-bd ul{
+    display: flex;
+}
+.no-bd ul li{
+    width: 100%;
+    flex:1;
+    font-size: 0.3rem;
+    -webkit-transform: scale(0.5);
+    height: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 0.1rem;
+    text-align: center;
+}
+.map{
+    height: 10.125rem;
+    position: relative;
+}
+
+.map1{
+    width: 7.475rem;
+    height:7.475rem ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url(../images/map.png);
+    background-size:100% 100%;
+    opacity: 0.3;
+}
+.map2{
+    width: 9.475rem;
+    height:9.475rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url(../images/lbx.png);
+    background-size:100% 100%;
+    animation: rotate1 15s linear infinite;
+    opacity: 0.5;
+}
+@keyframes rotate1{
+    form{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.map3{
+    width:  8.1rem;
+    height:  8.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url(../images/jt.png);
+    background-size:100% 100%;
+    animation: rotate2 15s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes rotate2{
+    form{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(-360deg);
+    }
+}
+.chart2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  8.1rem;
+    height:  8.1rem;
+}
+.chart2 div canvas{
+    width: 100%;
+    height: 100%;
+  }
